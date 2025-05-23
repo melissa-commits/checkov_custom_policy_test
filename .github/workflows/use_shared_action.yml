@@ -8,5 +8,6 @@ jobs:
   scan:
     uses: melissa-commits/actions/.github/workflows/iac_scan_test.yml@main
     permissions:
+      actions: read
       contents: read
       security-events: write  
