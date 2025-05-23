@@ -4,12 +4,9 @@ on:
   push:
   workflow_dispatch:
 
-permissions:
-  contents: read
-  security-events: write  # 👈 Grant to the whole workflow (optional but common)
-
-
-
 jobs:
   scan:
     uses: melissa-commits/actions/.github/workflows/iac_scan_test.yml@main
+    permissions:
+      contents: read
+      security-events: write  
